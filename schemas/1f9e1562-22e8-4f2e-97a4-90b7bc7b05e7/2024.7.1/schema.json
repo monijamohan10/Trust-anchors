@@ -1,0 +1,76 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "limitDisclosure": true
+        },
+        "legalForm": {
+            "type": "string",
+            "limitDisclosure": true
+        },
+        "activity": {
+            "type": "string",
+            "limitDisclosure": true
+        },
+        "registrationDate": {
+            "type": "string",
+            "limitDisclosure": true
+        },
+        "legalStatus": {
+            "type": "string",
+            "limitDisclosure": true
+        },
+        "registeredAddress": {
+            "type": "object",
+            "limitDisclosure": true,
+            "properties": {
+                "fullAddress": {
+                    "type": "string",
+                    "limitDisclosure": true
+                },
+                "thoroughFare": {
+                    "type": "string",
+                    "limitDisclosure": true
+                },
+                "locatorDesignator": {
+                    "type": "string",
+                    "limitDisclosure": true
+                },
+                "postCode": {
+                    "type": "string",
+                    "limitDisclosure": true
+                },
+                "postName": {
+                    "type": "string",
+                    "limitDisclosure": true
+                },
+                "adminUnitLevel1": {
+                    "type": "string",
+                    "limitDisclosure": true
+                }
+            },
+            "required": [
+                "fullAddress",
+                "thoroughFare",
+                "locatorDesignator",
+                "postCode",
+                "postName",
+                "adminUnitLevel1"
+            ]
+        },
+        "orgNumber": {
+            "type": "string",
+            "limitDisclosure": true
+        }
+    },
+    "required": [
+        "name",
+        "legalForm",
+        "activity",
+        "registrationDate",
+        "legalStatus",
+        "registeredAddress",
+        "orgNumber"
+    ]
+}
